@@ -1,0 +1,31 @@
+Data type:	A data type is used for to declare a variable and if you want use any variable,that variable should be intilised
+
+data type classified int two types those are
+1.primitive.
+2.non-premitive.
+
+now we discused about premitive data type: 
+*premitive data types are predefined in java and premitives are always numbers.
+
+the premitive data type again classified into 8types those are
+and these all are start with loweCase when we have to start with capital laters they should comes under non premitive data type(wrapper classes)
+1.byte 2.short 3.int 4.long 5.float 6.double 7.char 8.boolean
+
+in this starting 6data types are also called as correspnding data types.
+and in that 6 data types first 4 handled numerical values and remaining 2 data types handled realnumber nothing but(decimal values).
+**By default all numerical values consider as int data type
+**By default all decimal values conider as double data type
+
+** if we are not intilised the variable by default numerical values takes zero and real numbers take 0.0
+**if are not  not intilised the variable char takes by default space and boolean takes false
+
+Non-primitive Data Types:
+** these are not predefined in java.These data types are used to store multiple values.
+**The default value of non-primitive data type variable is null.
+**non premitive data types can be used to call methods to perform certain oeration
+non-primitive data types classified as fllows:
+1.Class
+2.Object
+3.String
+4.Array
+5.Interface

@@ -1,0 +1,29 @@
+
+How do you test a product if the requirements are yet to be freezed?
+
+for example i was tested a product but here required specifications are not avalable to test a product,in that time i have gone through test plan.these test plan created  based on the assumptions but in this test plan we should get all assumptions well-documented in the test plan
+in this test plan we cover the following topics
+1.Analyze the product
+2.Design the Test Strategy
+3.Define the Test Objectives
+4.Define Test Criteria
+5.Resource Planning
+6.Plan Test Environment
+7.Schedule & Estimation
+8.Determine Test Deliverables
+
+
+
+What do you understand by STLC?
+
+STLC stands for software testing life cycle.
+this STLC is a fundamental part of Software Development Life Cycle (SDLC).
+in this STLC process the following activities are made to improve the quality of the product
+those are:
+1.Requirement Analysis
+2.Test Planning
+3.Test Case Development
+4.Environment Setup
+5.Test Execution
+6.Test Cycle Closure
+in this we are stop some testing activities on a product and proceed through what we are done on that time.it may chance to fail ,why because in that time we are not completed all activities thats why we are facing so many problems regarding to user may be it regards to money or quality of product.

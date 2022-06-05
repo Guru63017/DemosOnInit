@@ -1,0 +1,530 @@
+﻿ 1)How much rate yourself in java:?
+   3 - 3.5 
+
+2)Did you use the interface in your project ?
+   Yes. While launching the chrome browser I had used an interface.
+   WebDriver driver = new ChromeDriver();
+   here webDriver is the interface and driver is the referance variable and ChromeDriver is the Child class object assigning to parent class variable is called upcasting
+
+3)Could you initiate object for the interface?
+   No.
+   Because in interface unimplemented functions are written and it does not contain constructor so we cant create an object for interface.
+
+4)What is the diffrence between interface and abstract class?
+   	
+	Interface contains 100% unimplemented method which are abstract methods.
+	In interface we can write only unimplemented functions. We can't write implemented functions.
+  	Interface does not conatin constructor so we cant create an object for interface.
+   	By using interface we can achieve multiple inheritance.
+
+    Bank b = new CanaraBank(); (Here upcasting is doing) child class object is assigning to Parent Class reference variable 
+    Parent             child
+
+   public interface Bank     is the parent Class
+
+   public class CanaraBank   is the child class 
+
+   Abstract class 
+   In abstract class we can write both implemented and unimplemented functions, but unimplemented funtions are not mapped with .class file..
+   so we can't create an object for abstract class directly because in abstract class both implemented and unimplemented functions are written.
+   By using child class we can create an object for abstract class.
+ 
+*public abstract class AbsDemo (this is the abstract class we can't create an object directly)
+	Abschild  ab1 = new Abschild();(this is the child class by using this we can call the unimplemented functions)
+
+5)Method Overloading and Method Overriding or dynamic polymorphism in java?
+
+   	In method overloading we can write multiple methods with same method name with different parameters.
+	we can overload the static functions.
+	sop is method overloading. System.out.println(10); System.out.println("Guru"); 
+
+   In method overriding or dynamic polymorphism we are using parent class method prototype in child class with different logic.
+
+   Static function can't be override.
+   parent and child class has same METHOD prototype.
+   Final methods can't be override.
+
+6)Difference between collection and collections
+collection is an interface & collections is Utility class in java
+
+Collection is a root level interface of the Java Collection FrameWork. Most of the classes in Java, Collection FrameWork inherit from this interface.
+Queue,List, and Set are main sub-interface of this collection.
+
+Collections is an utility class in java.util.package. It consists of only static functions which are used to operate on objects of type Collection.
+	
+
+7) How to find duplicate character in string?
+	if the count of each character is greater than one then it is duplicate character.
+
+8) How to findout missing number in a array?
+
+
+9) What is == and .equals() in java?
+    == will compare the address
+	.equal() will check their inside data is matching are not.
+
+10)What are the exceptions u faced?
+
+ArrayOutOfBoundException will occur for printing more than given index 
+NullPointException will occur for without Address.
+ArithmeticException.
+
+11) How do u handle the exceptions.?
+	Exceptions means interrupting the program is called Exception.
+
+	To handle exceptions, Exception Handling concept is required.
+	Exception Handling is a mechanism to handle runtime errors such ClassNotFound,
+	IOException, SQLException, RemoteException, etc.
+
+	By using Try, Catch block
+	
+
+	Ex: try
+	{
+	=
+	}
+	Catch(ArthmeticException e)
+	{
+	=
+	}
+	
+	
+
+	
+12) Difference between try,catch block and finally block?
+
+
+ 	Whenever we are writing a program there could be a code that we suspect might throw an exception.
+	Keep that code in try catch block to handle the exception.
+					or
+	try catch block is used to handle the exception handling.
+	In try block we write the logical statements and exception will handle by catch block
+	
+	Catch: We are using catch block to handle exceptions. The catch block follows the try block.
+		Catch block will perform only when exception is occured.
+	
+	Finally is a block which is used in Exception, finally block will execute all the code written inside the block irrespective of handling of exceptions.
+	Instead of catch block we can also use finally block. But finally block can't handle the exception. It is used in DB to discontinue.
+		
+13) What is upcasting?
+
+	Child class object is assigning to Parent Class reference variable is known as Upcasting.
+
+	Ex; Parent p1= new Child();
+	Parent             ---------- Parent class
+	P1                   ---------- Variable
+	new Child();     ---------- Child object
+
+
+14) What is singleton class?
+
+	In object-oriented programming, a singleton class is a class that can have only one object at a time.
+	We can do this by making the constructor as private.
+
+15) what is encapsulation?
+
+	Binding code and data in a single unit is called encapsulation.
+	Declare the variables of a class as private.
+
+public class EncapsulationDemo 
+{
+	private int emp_salary;
+	public static void main(String[] args) 
+	{
+		EncapsulationDemo e = new EncapsulationDemo();
+		e.set_Salary(30000);
+		System.out.println(e.get_Salary());
+	}
+	
+	public void set_Salary(int salary)
+	{
+		emp_salary=salary;
+		
+	}
+	
+	public int get_Salary()
+	{
+		return emp_salary;
+	}
+
+}
+
+16) Difference between Hashmap and hashtable ?
+		HashMap						HashTable
+	Methods are not synchronized			Key methods are synchronized
+	Not thread safety				Thread safety
+	Iterator is used to iterate the values		Enumerator is used to iterate the values
+	Allows one null key and multiple null values	Doesn’t allow anything that is null
+	Performance is high than HashTable		Performance is slow
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is Java?
+Java is a programming language and a platform independent.
+Java is object oriented programming language.
+
+
+Features of Java or buzz words.
+1)Simple
+2)Object-Oriented
+3)Portable
+4)Platform independent
+5)Secured
+6)Robust
+7)Architecture neutral
+8)Interpreted
+9)High Performance
+10)Multithreaded
+11)Distributed
+12)Dynamic
+
+What is OOP's?
+OOPs Stands for Object-oriented programming (OOPs)
+Basic concepts of OOPs are:
+
+Object
+Class
+Inheritance
+Polymorphism
+Abstraction
+Encapsulation
+
+Class: A class can also be defined as a blueprint from which you can create an individual object. Class can be defined as Collection of objects. 
+
+Object: A class is a template or blueprint from which objects are created. So, an object is the instance(result) of a class.
+
+Abstraction: 
+	Abstraction is a process of hiding the implementation details and showing its fuctionality to user.
+	In java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+
+Inheritance:
+	Inheritance is a process of aquiring all the properties and behaviour of parent class and used in child class.
+	Code reusability is the main concept.
+	By using extends keyword we can implement IS-A Relationship.
+
+ Encapsulation:
+	Binding code and data in a single unit is called encapsulation.
+
+Polymorphism:
+	Polymorphism means many forms nothing but many functions.
+	Compile time polymorphism is nothing but same  method name and different parameters. Example method overloading.
+	Runtime polymorphism is also know as dynamic polymorphism and method overriding which is overriding the logic of parent class method in child class with same method name.
+
+
+What is meant by variable?
+Variable is a temporary storage place where we can store a lot of values.
+			or
+Variable is nothing but reserved area name in the ram at run time
+
+int x; is declaration
+x=10; is initialization.
+
+1) Local Variable
+A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+
+A local variable cannot be defined with "static" keyword.
+
+2) Instance Variable
+A variable declared inside the class but outside the body of the method, is called an instance variable.
+Initialization of Instance Variable is not Mandatory. Its default value is 0
+Instance Variable can be accessed only by creating objects.
+
+3) Static variable
+A variable that is declared as static is called a static variable. It cannot be local. 
+Memory allocation for static variables happens only once when the class is loaded in the memory.
+
+Static members are store in context memory area.
+1) we can directly Access.
+2)Access with the help of class name.
+3) we can't initialize and declare static variable inside method.
+
+2)What is String?
+	String is sequence of char data.
+	String is immutuable.we cannot change the status of the object.
+	String is more secure because String is immutable.
+
+	Literal object will store in String Constant Pool Memory Area which is present inside the Heap area.
+	By using String literal object, memory efficiency.
+
+	String s = "Selenium"; it is literal Object
+
+3)What is StringBuffer
+	StringBuffer is a thread Safe,it will allow only one method at a time.it is not efficient when compare to StringBuilder.StringBuffer is mutuble.
+	Here string values are stored in a stack. If the values are changed then the new value replaces the older value.
+	The string buffer is synchronized which is thread-safe.
+	Performance is slower than the String Builder.
+
+Example:
+String Buffer name =”book”;
+						Once the name value has been changed to “pen” then the “book” is erased in the stack.
+Stack
+|```````````````````|				|```````````````````|
+|```````````````````| book				|```````````````````| Pen
+ ```````````````````				 ```````````````````
+
+4)What is StringBuilder.
+	StringBuilder is not thread safe, it will allow more than one method at a time. it is more efficient when compare to stringbuffer.
+	
+	String Builder:
+	This is the same as String Buffer except for the String Builder which is not threaded safely that is not synchronized. So obviously the performance is fast.
+
+
+5)What is meant by Array in java?
+	Array is a group of similar data types.
+	Arrays are used to store multiple values in a single variable 
+	Array follows the index starting from 0 and ending is N-1.
+
+//Drawback of Array is Size. we can't change the size, once we had declaration.
+
+6)What is Inheritance?
+	Inheritance is a process of aquiring all the properties and behaviour of parent class and used in child class.
+	Code reusability is the main concept.
+	By using extends keyword we can implement IS-A Relationship.
+	
+	There are 5 types of inheritance
+	1)Single inheritance.	(means single parent)
+	2)Multi-Level inhetitanec 	(means multiple levels)
+	3)Hierarchical inheritance	(means reverse of multiple)
+	4)Multiple inheritance	(means extended to two or more than two) 
+	5)Hybrid inheritance		
+
+	//**##** Multiple inheritance and Hybrid inheritance can't be achieve in Java using Classes.
+	//**##** Multiple inheritance and Hybrid inheritance can be achieve in Java using interface.
+
+Ex:  child class extends parent class
+
+After extends keyword-------------Parent class
+Before extends keyword------------child class
+
+7)what is Constructor?
+	When a new object is created in a program a constructor gets invoked corresponding to the class.
+ 	Constructor name should be equal to class name.
+	Should not contain any return datatype.
+	If the user is not declare any constructor then compiler will create zero parameterized constructor with no logical statements called default constructor
+	Constructor is only for non static, we can't create static constructor.
+
+8)What are the access modifiers?
+	We have 4 types of access modifiers those are. 
+	a)Private: 	When we use a private access specifier, the method is accessible only in the classes in which it is defined.
+	b)Default:	It will be access within the package only.
+	c)Protected: 	When we use protected access specifier, the method is accessible within the same package or subclasses in a different package.
+	d)Public: 	The method is accessible by all classes when we use public specifier in our application.
+
+10) What is compile time polymorphism and runtime polymorphism?
+Ans) polymorphism means many forms nothing but many functions.
+Compile time polymorphism is nothing but same  method name and different parameters. Example method overloading.
+Runtime polymorphism is also know as dynamic polymorphism and method overriding which is overriding the logic of parent class method in child class with same method name.
+
+
+11) What is Final, Finally and Finalize?
+
+Final variable: Once a variable is declared as final, then the value of the variable could not be changed. It is like a constant.
+Example: final int = 12;
+
+Final method: A final keyword in a method, couldn’t be overridden. If a method is marked as a final, then it can’t be overridden by the subclass.
+
+Final class: If a class is declared as final, then the class couldn’t be subclassed. No class can extend the final class.
+
+Finally is a block which is used in Exception, finally block will perform all the code written inside it get executed irrespective of handling of exceptions.
+
+Finalize is method which is present in garbage collector if there is any anonymous objects in heap memory area garbage collector will call finalize method to perform and will delete those object which has no address.
+
+12. When can you use the super keyword?
+	In Java, the super keyword refers to an immediate parent class object.
+	we can call parent method, variable and constructor using super keyword.
+	While calling parent constructor using super keyword, it should be 1st statement in the code.
+	(Not for variable and methods) variables or data types means same.
+
+13. What is meant by This keyword?
+	This is generally associated with current class.
+	we can call current class, variable, method and constructor using this keyword.
+	While calling current class constructor using this keyword, it should be 1st statement in the code.
+	(Not for variable and methods) variables or data types means same.
+
+14.What is Throw, throws and throwable?
+
+Throws will gives the information
+throws: The Java throws keyword is used to declare an exception. Checked exceptions can be propagated with throws.
+
+Throw is a block which is used to throw the new exception to terminate the block.
+
+Throwable is the Parent Class of Exceptions
+
+public class Java
+{
+p.s.v.m(String args[]) throws Exception
+{
+voterValidation(17);
+}
+static void voterValidation(int age)
+{
+=
+=
+throw new NullPointException();					2 are unchecked exceptions
+throw new ArrayOutOfBoundException();
+
+throw new Exception();						
+throw new FileNotFoundException();	         			2 are checked exceptions and checked will get error and we need to add throws to method.
+}
+}
+
+
+
+Downcasting:
+Animal anim = new Cat();
+Cat cat = (Cat) anim;
+
+What is the difference between pre increment and post increment?
+i++ ---------> post increment.
+++i --------->pre increment.
+
+Example:
+int i=5;	|	int i=5;
+int j=i++;	|	int j=++i;
+sop(j);  //5	|	sop(j);   //6
+
+
+Why java is Platform indepenedent?
+Java code can be run on multiple platforms like windows, mac/os.
+Java code is compiled by the compiler and converted into bytecode.
+This bytecode is a platform- independent code because it can be run on multiple platforms.
+Write once and run anywhere.
+
+State or property or variable  and  behaviour or function or method
+
+
+Static Variables 
+Static members are store in context memory area.
+1) we can directly Access.
+2)Access with the help of class name.
+3) we can't initialize and declare static variable inside method.
+
+
+What is meant by method?
+A method is a block of code which only runs when it is called.
+It is used to achieve the reusability of code.
+You can pass data, known as parameters, into a method.
+We write a method once and use it many times.
+
+
+What are the ways to achive abstraction?
+In java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+
+Abstract classes and Abstract methods :  
+An abstract class is a class that is declared with an abstract keyword.
+An abstract method is a method that is declared without implementation.
+
+Difference between abstraction and encapsulation?
+In abstraction, implementation details are hide		
+In encapsulation, data is hide to other members by using protected or private keyword.
+
+Types of operators in java?
+Arithmetic Operators	+,-,*,/,%
+Assignment Operators	=
+Relational Operators	==,!=,<,>,<=,>=
+Logical Operators		&& or AND, || or OR, ! or NOT
+
+Unary Operators or 
+increment or decrement  		i++,++i, i--,--i.
+
+Bitwise Operators
+Ternary operator		?
+
+ternary operator ?
+It is used to evaluate Boolean expressions.
+
+Explain about public static void main(String args[]) 
+
+public is access modifier, we can access in any class
+static = we can directly access without creating an object.
+void is not return 
+main is the function name which is parameterized function.
+JVM will search in order to start the execution of the code.
+String args will look for the command line arguments.
+
+Example:
+class A
+{
+public static void main(String args[])
+{
+for(int i=0; i<args.length; i++)
+{
+System.out.println(args[i]);
+}
+}
+}
+
+
+javac A.java
+java A 12 "Vinod" 99.9
+
+output
+12
+Vinod
+99.9
+
+
+There are two types of exceptions
+	Checked exception(on screen)
+	Checked exceptions occur at compile time.
+	The compiler checks a checked exception.
+	
+	FileNotFoundException
+	NoSuchFieldException
+	InterruptedException
+	NoSuchMethodException
+	ClassNotFoundException
+
+	Unchecked exceptions occur at runtime.
+	The compiler does not check these types of exceptions.
+
+	No Such Element Exception
+	Undeclared Throwable Exception
+	Empty Stack Exception
+	Arithmetic Exception
+	Null Pointer Exception
+	Array Index Out of Bounds Exception
+	Security Exception
+
+MultiThreading:Multithreading in Java is a process of executing multiple threads simultaneously.
+
+A thread is a lightweight sub-process, the smallest unit of processing.
+we can run multiple thread at a time.
+each thread will work individually.
+No process load
+Less cost to maintain.
+
+Life cycle of multi threading
+
+New
+
+Runnable
+
+Running 	
+		block
+Destroy
+
+Thread:A thread is a lightweight subprocess, the smallest unit of processing. It is a separate path of execution.
+
+AWT(abstract window toolkit)
+It is an API to develop GUI or Window based application
+It is platform independent
+it idepends on operating System.
+Java AWT components are platform-dependent i.e. components are displayed according to the view of operating system. 
+AWT is heavy weight i.e. its components are using the resources of underlying operating system (OS).
+Java.awt.*
+
+Applet is a special type of program that is embedded in the webpage to generate the dynamic content. It runs inside the browser and works at client side.
+
+Lifecycle of Java Applet
+
+Applet is initialized.
+Applet is started.
+Applet is painted.
+Applet is stopped.
+Applet is destroyed.
+
+Java Swing is part of Java Foundation Classes. It is used to create window-based applications which makes it suitable for developing lightweight desktop applications.
+
+Java Swing is built on top of an abstract windowing toolkit API purely written in Java programming language.
+
+Java Swing provides lightweight and platform-independent components, making it suitable and efficient in designing and developing desktop-based applications (systems).
+SmartPrograrmings.
